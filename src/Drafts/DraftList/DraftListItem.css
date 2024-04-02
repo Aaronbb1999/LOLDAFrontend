@@ -26,4 +26,8 @@ span {
     margin-right: 4px;
     margin-left: 4px;
 }
+
+.initials {
+    min-width: 30px;
+}
   
