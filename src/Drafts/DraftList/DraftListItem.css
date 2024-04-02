@@ -1,0 +1,29 @@
+.list {
+    list-style-type: none; /* Quita el punto de la lista */
+    padding: 0;
+}
+
+li {
+  background-color: black; /* Fondo negro */
+  color: white; /* Texto blanco */
+  border: 2px solid white; /* Borde blanco */
+  border-radius: 10px; /* Bordes redondeados */
+  margin-bottom: 5px; /* Espacio entre elementos de la lista */
+  padding: 10px; /* Espacio interno */
+  display: flex;
+  align-items: center;
+  
+}
+
+img {
+    max-width: 30px;
+    max-height: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+span {
+    margin-right: 4px;
+    margin-left: 4px;
+}
+  
