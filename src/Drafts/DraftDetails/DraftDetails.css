@@ -1,0 +1,50 @@
+.draftDetails {
+    background-color: black; /* Fondo negro */
+    color: white; /* Texto blanco */
+    border: 2px solid white; /* Borde blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-left: 30px;
+    width: 72%;    
+}
+
+.matchHeader {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 30px 15px 30px 15px; 
+  }
+  
+.matchHeader img {
+  max-width: 80px; /* Ancho de las imágenes */
+  max-height: 80px; /* Altura de las imágenes */
+}
+
+.teamName {
+  margin: 0 3px 3px 0; /* Elimina el margen predeterminado del encabezado */
+  font-size: 24px; /* Tamaño de fuente */
+  font-weight: bold ;
+}
+
+.result {
+    font-size: 20px; /* Tamaño de fuente */
+    font-weight: bold ;
+    border: 2px solid white;
+    border-radius: 10px; 
+    padding: 3px 3px 5px 3px;
+}
+
+.winner {
+  color: #fcfcfc;
+  font-weight: bold ;
+}
+
+.looser {
+  color: #c4c0c081;
+  font-weight: bold ;
+}
+
+.draftChamps {
+  display: flex;
+  align-items: start;
+}
+  

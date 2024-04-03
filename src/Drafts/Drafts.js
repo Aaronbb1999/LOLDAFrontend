@@ -13,7 +13,7 @@ function Drafts() {
     return (
         <div className="Drafts">
             <DraftList onSelectDraft={handleDraftSelected}/>
-            <DraftDetails/>
+            <DraftDetails draft={selectedDraft}/>
         </div>
     )
 }

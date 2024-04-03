@@ -1,0 +1,33 @@
+.champ-card {
+    width: 100px;
+    height: 200px;
+    border: 3px solid #2368fc;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    margin: 20px;
+    position: relative;
+  }
+
+  .champ-image {
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0px;
+  }
+  
+  .champ-name {
+    padding: 2px 0;
+    font-size: 15px;
+    color: #ffeded;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #2368fc;
+    font-weight: bold;
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+  }
+  

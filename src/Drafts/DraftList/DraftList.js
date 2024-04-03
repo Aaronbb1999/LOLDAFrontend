@@ -4,8 +4,10 @@ import './DraftListItem.css'
 
 function DraftList({onSelectDraft}) {
     const [drafts, setDrafts] = useState(null);
+    const [selectedIndex, setSelectedIndex] = useState(null);
 
     const handleDraftSelected = (draft) => {
+        setSelectedIndex(draft.id === selectedIndex ? null : draft.id);
         onSelectDraft(draft);
     };
     
@@ -14,7 +16,7 @@ function DraftList({onSelectDraft}) {
           .then(response => response.json())
           .then(data => setDrafts(data.content))
           .catch(error => console.error('Error fetching data:', error));
-
+        
       }, []);  
 
     return (
@@ -22,8 +24,12 @@ function DraftList({onSelectDraft}) {
             <h2>Lista de Partidos</h2>
             {drafts && 
                 <ul className="list">
-                    {drafts.map((draft, index) => (
-                        <DraftListItem onSelectedDraft={handleDraftSelected} draft={draft} index={index}/>
+                    {drafts.slice(0,7).map((draft) => (
+                        <DraftListItem 
+                        onSelectedDraft={handleDraftSelected} 
+                        draft={draft} 
+                        key={draft.id}
+                        isSelected={draft.id === selectedIndex}/>
                     ))}
                 </ul>
             }
