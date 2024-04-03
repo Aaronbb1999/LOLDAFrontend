@@ -24,7 +24,7 @@ function DraftList({onSelectDraft}) {
             <h2>Lista de Partidos</h2>
             {drafts && 
                 <ul className="list">
-                    {drafts.slice(0,7).map((draft) => (
+                    {drafts.slice(0,12).map((draft) => (
                         <DraftListItem 
                         onSelectedDraft={handleDraftSelected} 
                         draft={draft} 

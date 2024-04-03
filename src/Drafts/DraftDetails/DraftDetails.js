@@ -6,7 +6,9 @@ function DraftDetails({ draft }) {
     const winnerResult = <span className='winner'>1</span>
     const looserResult = <span className='looser'>0</span>
 
-    
+    const blue_picks = draft && [draft.draft.blue_pick_1, draft.draft.blue_pick_2, draft.draft.blue_pick_3, draft.draft.blue_pick_4, draft.draft.blue_pick_5];
+    const red_picks = draft && [draft.draft.red_pick_1, draft.draft.red_pick_2, draft.draft.red_pick_3, draft.draft.red_pick_4, draft.draft.red_pick_5];
+
 
     return (
       <div className='draftDetails'>
@@ -24,11 +26,16 @@ function DraftDetails({ draft }) {
               <img src={require(`../../resources/${draft.red_team.initials}.webp`)} alt="Red Team Logo" />
             </div>
             <div className='draftChamps'>
-                <ChampCard champName={draft.draft.blue_pick_1.name}/>
-                <ChampCard champName={draft.draft.blue_pick_2.name}/>
-                <ChampCard champName={draft.draft.blue_pick_3.name}/>
-                <ChampCard champName={draft.draft.blue_pick_4.name}/>
-                <ChampCard champName={draft.draft.blue_pick_5.name}/>
+              <div className='blueDraft'>
+                {blue_picks.map((champ, index) => (
+                  <ChampCard key={index} champName={champ.name} isBlue = {true}/>
+                ))}
+              </div>
+              <div className='redDraft'>
+                {red_picks.map((champ, index) => (
+                  <ChampCard key={index} champName={champ.name} isBlue = {false}/>
+                ))}
+              </div>
             </div>
           </>
         ) : (

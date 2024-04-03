@@ -4,14 +4,14 @@
     border: 2px solid white; /* Borde blanco */
     border-radius: 10px; /* Bordes redondeados */
     margin-left: 30px;
-    width: 72%;    
+    width: 80%;    
 }
 
 .matchHeader {
     display: flex; 
     align-items: center; 
     justify-content: space-between; 
-    padding: 30px 15px 30px 15px; 
+    padding: 40px 40px 30px 40px; 
   }
   
 .matchHeader img {
@@ -44,7 +44,23 @@
 }
 
 .draftChamps {
-  display: flex;
-  align-items: start;
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  margin: 15px;
 }
+
+.redDraft{
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.blueDraft{
+  display: flex;
+  align-items: center;
+  margin-right: 0.5%;
+}
+
+
   
