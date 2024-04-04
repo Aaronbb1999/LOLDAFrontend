@@ -4,7 +4,6 @@
     border: 2px solid white; /* Borde blanco */
     border-radius: 10px; /* Bordes redondeados */
     margin-left: 30px;
-    width: 80%;    
 }
 
 .matchHeader {
@@ -19,8 +18,12 @@
   max-height: 80px; /* Altura de las imágenes */
 }
 
+span {
+  margin-right: 4px;
+  margin-left: 4px;
+}
+
 .teamName {
-  margin: 0 3px 3px 0; /* Elimina el margen predeterminado del encabezado */
   font-size: 24px; /* Tamaño de fuente */
   font-weight: bold ;
 }
@@ -54,13 +57,41 @@
   display: flex;
   align-items: center;
   align-content: center;
+  margin-left: 1%;
 }
 
 .blueDraft{
   display: flex;
   align-items: center;
+  align-content: center;
+  margin-right: 1%;
+}
+
+.blueBans{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: start;
+  margin-left: 20%;
   margin-right: 0.5%;
 }
+
+.redBans{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: start;
+  margin-right: 20%;
+  margin-left: 0.5%;
+}
+
+.draftBans {
+  display: flex; 
+  align-items: start; 
+  justify-content: space-between; 
+  margin: 15px;
+}
+
 
 
   

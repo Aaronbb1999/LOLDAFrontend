@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-li {
+.list-item {
   background-color: black; /* Fondo negro */
   color: white; /* Texto blanco */
   border: 2px solid white; /* Borde blanco */
@@ -12,26 +12,25 @@ li {
   padding: 10px; /* Espacio interno */
   display: flex;
   align-items: center;
-  
 }
 
-img {
+.list-item > img {
     max-width: 30px;
     max-height: 30px;
     margin-right: 10px;
     margin-left: 10px;
 }
 
-span {
+.list-item > span {
     margin-right: 4px;
     margin-left: 4px;
 }
 
-.initials {
+.list-item > .initials {
     min-width: 30px;
 }
 
 .selected {
-    background-color: rgb(48, 23, 23);
+    background-color: #c26d6d;
     text-emphasis: black;
 }

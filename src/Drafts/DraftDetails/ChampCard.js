@@ -2,7 +2,7 @@ import React from 'react';
 import './ChampCard.css'; 
 
 function ChampCard({ champName, isBlue }) {
-  const imagePath = require(`../../resources/Champs/${champName}.jpg`);
+  const imagePath = require(`../../resources/Champs/${champName}_0.jpg`);
 
   return (
     <div className={`champ-card ${isBlue ? '' : 'red-card'}`}>

@@ -12,7 +12,7 @@ function DraftListItem({onSelectedDraft, draft, isSelected}) {
 
     return (
         <>
-            <li className={`${isSelected ? 'selected' : ''}`} 
+            <li className={`list-item ${isSelected ? 'selected' : ''}`} 
                 onClick={() => handleClick()} 
                 key={draft.id}>
                     <img src={blueLogo} alt="Blue Team Logo" />

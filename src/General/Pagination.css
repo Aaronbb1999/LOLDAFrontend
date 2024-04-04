@@ -1,0 +1,30 @@
+.pagination {
+    display: flex;
+    padding-inline-start: 0;
+    color: #fff;
+    justify-content: center;
+}
+
+.pagination > li {
+    background-color: black; /* Fondo negro */
+    color: white; /* Texto blanco */
+    border: 2px solid white; /* Borde blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    list-style-type: none; /* Quita el punto de la lista */
+    width: 30px;
+    margin: 3px;
+}
+
+a {
+    color: #fff;
+    outline: none;
+    text-decoration: none;
+}
+
+li:hover {
+    background: #c26d6d;
+}
+
+.pagination .page-link span.visually-hidden {
+    display: none;
+}
